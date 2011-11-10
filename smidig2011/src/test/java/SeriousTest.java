@@ -23,7 +23,7 @@ public class SeriousTest {
     public void shouldNotFail() throws Exception {
         Statement stat = conn.createStatement();
         ResultSet rs = stat.executeQuery("select message from smidig2011;");
-        assertEquals("woop woop", rs.getString("message"));
+        assertEquals("woop woop", rs.getString("message2"));
         rs.close();
     }
 
